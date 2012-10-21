@@ -7,12 +7,12 @@ TwittVault is a simple NodeJS script that store all your tweets in a MySQL datab
 About
 ^^^^^
 
-This simple script will store your tweets into a MySQL database. Twittvault is released under the GPL General Public License V3.
+This simple script will store your tweets into a MySQL database consuming the Twitter streaming API with the amazing Tuiter library (https://github.com/danzajdband/Tuiter). Twittvault is released under the GPL General Public License V3 (see COPYNG file).
 
 Installation
 ^^^^^^^^^^^^
 
-* Download sources
+* Clone the repository (https://github.com/atarantini/twittvault) or download sources https://github.com/atarantini/twittvault/tarball/master
 * Go to the sources directory and run `npm install` from your terminal to install dependencies
 
 Setup
@@ -36,7 +36,7 @@ Run
 
 From the command line::
 
-`node twittvault.js`
+	node twittvault.js
 
 Author
 ^^^^^^
