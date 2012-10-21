@@ -1,0 +1,15 @@
+{
+	"twitter_api_keys": {
+		"consumer_key" : ""
+	  , "consumer_secret" : ""
+	  , "access_token_key" : ""
+	  , "access_token_secret" : ""
+	},
+	"db": {
+        "user": ""
+      , "password": ""
+      , "name": ""
+	  , "tweets_table": "tweets"
+    },
+	"user_id": ""
+}
