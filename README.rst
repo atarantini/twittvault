@@ -38,7 +38,7 @@ Setup
 	  PRIMARY KEY (`id`)
 	) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-* Edit ``config.json`` and setup your Twitter API key, MySQL login credentials, database name, tables and Twitter user id (**not** the ``screen_name``, your numeric user id).
+* Edit ``config.json`` and setup your Twitter API key, MySQL login credentials, database name, tables and Twitter screen name (without the *@*)
 
 Run
 ^^^^
@@ -51,9 +51,3 @@ Author
 ^^^^^^
 
 * Andres Tarantini (atarantini@gmail.com)
-
-FAQ
-^^^^
-
-* Where I can find my Twitter user id?
-	* You can fetch user data based on the *screen name* using the REST Twitter API. If you want the user id from the ``example`` user point your browser to https://api.twitter.com/1/users/show.json?screen_name=example and a JSON will be returned with all user data. Search for the ``id`` field.

@@ -8,8 +8,8 @@
 	"db": {
         "user": ""
       , "password": ""
-      , "name": ""
+      , "name": "twittvault"
 	  , "tweets_table": "tweets"
     },
-	"user_id": ""
+	"screen_name": "my_twitter_screen_name"
 }

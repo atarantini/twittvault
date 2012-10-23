@@ -24,11 +24,21 @@ var db = mysql.createClient({user: config.db.user, password: config.db.password}
 db.query('USE ' + config.db.name);
 
 
-// Create stream connection to Twitter API
-api.filter({follow: config.user_id}, function(stream){
-	stream.on('tweet', function(data){
-		console.log('+ @'+data.user.screen_name+': '+data.text);
-		save_tweet(data);
-	});
+// Get user id from screen name
+api.showUser({screen_name: config.screen_name}, function(err, user) {
+	if(!err) {
+		// Create stream connection to Twitter API
+		api.filter({follow: user.id}, function(stream){
+			stream.on('tweet', function(data){
+				console.log('+ @'+data.user.screen_name+': '+data.text);
+				// Store tweet in DB
+				save_tweet(data);
+			});
+		});
+
+		console.log('Waiting for tweets...');
+	} else {
+		console.log('Error when trying to get username id of @'+config.screen_name);
+		process.exit(1);
+	}
 });
-console.log('Waiting for tweets...');
