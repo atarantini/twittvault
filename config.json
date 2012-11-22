@@ -6,7 +6,9 @@
 	  , "access_token_secret" : ""
 	},
 	"db": {
-        "user": ""
+	"host": ""
+      , "port": ""
+      , "user": ""
       , "password": ""
       , "name": "twittvault"
 	  , "tweets_table": "tweets"
