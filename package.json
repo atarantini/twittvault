@@ -1,8 +1,9 @@
 {
 	"name": "twittvault",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"dependencies": {
 		"tuiter": "0.2.x",
-		"mysql": "0.9.x"
+		"mysql": "0.9.x",
+		"debug": "0.7.x"
 	}
 }
