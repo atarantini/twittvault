@@ -47,6 +47,10 @@ Just call it with node::
 
 	node twittvault.js
 
+If you want to get some output and debug information, call with with DEBUG::
+
+	DEBUG=* node twittvault.js
+
 Author
 ^^^^^^
 
