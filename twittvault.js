@@ -20,7 +20,7 @@ function save_tweet(data) {
 
 
 // DB setup
-var db = mysql.createClient({user: config.db.user, password: config.db.password});
+var db = mysql.createClient(config.db);
 db.query('USE ' + config.db.name);
 
 
